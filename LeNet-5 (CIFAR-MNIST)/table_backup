@@ -1,0 +1,69 @@
+
+\begin{table}[]
+\begin{tabular}{llllllll}
+\rowcolor[HTML]{343434} 
+{\color[HTML]{FFFFFF} Dataset} &
+  {\color[HTML]{FFFFFF} BNorm?} &
+  {\color[HTML]{FFFFFF} \begin{tabular}[c]{@{}l@{}}Q-NUM\end{tabular}} &
+  {\color[HTML]{FFFFFF} W Bits} &
+  {\color[HTML]{FFFFFF} A Bits} &
+  {\color[HTML]{FFFFFF} Max Bits} &
+  {\color[HTML]{FFFFFF} Accuracy} \\
+\rowcolor[HTML]{C0C0C0}
+MNIST & No  & No Quantize & 0.375 & 7.25 & 12 & 97.43\% \\
+MNIST  & No  & 0.125 & 0.375+4 & 7.65+4  & 12+4  & 97.44\% \\
+MNIST  & No  & 0.25  & 0.375+3 & 7.9+3  & 12+3  & 97.08\% \\
+MNIST  & No  & 0.5   & 0.625+2 & 8.05+2  & 13+2  & 93.42\% \\
+\rowcolor[HTML]{C0C0C0}
+MNIST  & {\color[HTML]{F56B00} Yes} & No Quantize & 0.375 & 4.72   & 7 & 99.34\% \\
+MNIST  & Yes & 0.125 & 0.375+4  & 4.83+4  & 7+4  & 99.23\% \\
+MNIST  & Yes & 0.25  & 0.5+3 & 7.16+3  & 11+3  & 31.65\% \\
+MNIST  & Yes & 0.5   & 0.5+2 & 7.63+2  & 13+2  & 25.94\% \\
+\rowcolor[HTML]{C0C0C0} 
+CIFAR  & No  & No Quantize & 1.5 & 8.95   & 13 & 60.53\% \\
+CIFAR  & No  & 0.125 & 1.5+4 & 8.9+4   & 13+4  & 59.16\% \\
+CIFAR  & No  & 0.25  & 1.5+3 & 9+3  & 13+3  & 58.24\% \\
+CIFAR  & No  & 0.5   & 1.625+2 & 9+2  & 13+2  & 42.3\% \\
+\rowcolor[HTML]{C0C0C0} 
+CIFAR  & {\color[HTML]{F56B00} Yes} & No Quantize & 0.75  & 5.375 & 8 & 73.96\%  \\
+CIFAR  & Yes & 0.125 & 0.75+4  & 5.45+4  & 8+4  & 67.22\% \\
+CIFAR  & Yes & 0.25  & 0.75+3  & 5.38+3  & 8+3  & 58.94\% \\
+CIFAR  & Yes & 0.5   & 0.75+2  & 6.05+2   & 8+2  & 18.01\%
+
+\end{tabular}
+\caption{Results for post training quantization.}
+\end{table}
+
+\begin{table}
+\begin{tabular}{llllllll}
+\rowcolor[HTML]{34696D} 
+{\color[HTML]{FFFFFF} Dataset} &
+  {\color[HTML]{FFFFFF} BNorm?} &
+  {\color[HTML]{FFFFFF} \begin{tabular}[c]{@{}l@{}}Q-NUM\end{tabular}} &
+  {\color[HTML]{FFFFFF} W Bits} &
+  {\color[HTML]{FFFFFF} A Bits} &
+  {\color[HTML]{FFFFFF} Max Bits} &
+  {\color[HTML]{FFFFFF} Accuracy} \\
+ \rowcolor[HTML]{C0C0C0}
+MNIST & No  & No Quantize & 0.375 & 7.5 & 12 & 97.43\% \\
+MNIST & No  & 0.125 & 0.375+4 & 7.65+4 & 12+4 & 97.44\% \\
+MNIST  & No  & 0.25  & 0.375+3 & 7.95+3 & 12+3 & 97.08\% \\
+MNIST  & No  & 0.5   & 0.625+2 & 8.1+2  & 13+2 & 93.42\% \\
+\rowcolor[HTML]{C0C0C0}
+MNIST  & {\color[HTML]{F56B00} Yes} & No Quantize & 0.375 & 4.72   & 7 & 99.34\% \\
+MNIST & Yes & 0.125 & 0.375+4  & 4.83+4 & 7+4 & 99.51\% \\
+MNIST & Yes & 0.25  & 0.5+3  & 6.825+3 & 11+3 & 46.28\% \\
+MNIST  & Yes & 0.5   & 0.5+2  & 7.28+2 & 13+2  & 66.71\% \\
+\rowcolor[HTML]{C0C0C0} 
+CIFAR  & No  & No Quantize & 1.5 & 8.95 & 13 & 60.53\% \\
+CIFAR  & No  & 0.125 & 1.5+4 & 8.9+4  & 13+4 & 59.16\% \\
+CIFAR & No  & 0.25  & 1.5+3 & 9.0+3 & 13+3 & 58.24\% \\
+CIFAR  & No  & 0.5   & 1.625+2 & 9.0+2 & 13+2 & 42.3\% \\
+\rowcolor[HTML]{C0C0C0} 
+CIFAR  & {\color[HTML]{F56B00} Yes} & No Quantize & 0.75  & 5.375 & 8 & 73.96\%  \\
+CIFAR  & Yes & 0.125 & 0.75+4  & 5.375+4 & 8+4 & 72.47\% \\
+CIFAR  & Yes & 0.25  & 0.75+3  & 5.625+3 & 8+3 & 67.83\% \\
+CIFAR  & Yes & 0.5   & 0.75+2  & 5.975+2 & 8+2  & 52.86\%
+\end{tabular}
+\caption{Results for quantization after finetuning.}
+\end{table}

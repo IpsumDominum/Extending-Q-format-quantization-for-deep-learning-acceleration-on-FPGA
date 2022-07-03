@@ -1,0 +1,9 @@
+{
+    "data_Q_m": 1,
+    "data_Q_n": 3,
+    "data_amount":10000,
+    "data_width":28,
+    "data_height":28,
+    "data_image_file_path":"Data/MNIST/image_test.txt",
+    "data_label_file_path":"Data/MNIST/label_test.txt"
+}

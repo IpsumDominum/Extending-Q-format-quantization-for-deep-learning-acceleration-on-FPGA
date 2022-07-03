@@ -1,0 +1,35 @@
+no_bn_fixed = TOTAL ACCURACY : 94.75% (MAX 0.9886)
+no_bn_fixed_with_train = TOTAL ACCURACY : 94.75% (MAX 0.9886)
+
+bn_no_train = TOTAL ACCURACY : 13.73%  (Max 99%)
+bn_with_train = TOTAL ACCURACY : 13.73%  (Max 99%)
+
+
+
+
+========================0.125
+
+Epoch 1/5
+469/469 [==============================] - 10s 21ms/step - loss: 0.5066 - accuracy: 0.9578
+Epoch 2/5
+469/469 [==============================] - 10s 21ms/step - loss: 0.4123 - accuracy: 0.9841
+Epoch 3/5
+469/469 [==============================] - 10s 21ms/step - loss: 0.3924 - accuracy: 0.9871
+Epoch 4/5
+469/469 [==============================] - 10s 20ms/step - loss: 0.3826 - accuracy: 0.9892
+Epoch 5/5
+469/469 [==============================] - 10s 21ms/step - loss: 0.3755 - accuracy: 0.9908
+
+=======================0.25
+Using Batch Norm
+[INFO] Start training...
+Epoch 1/5
+469/469 [==============================] - 10s 21ms/step - loss: 0.5356 - accuracy: 0.9488
+Epoch 2/5
+469/469 [==============================] - 10s 21ms/step - loss: 0.4256 - accuracy: 0.9813
+Epoch 3/5
+469/469 [==============================] - 10s 21ms/step - loss: 0.4073 - accuracy: 0.9850
+Epoch 4/5
+469/469 [==============================] - 10s 21ms/step - loss: 0.3943 - accuracy: 0.9878
+Epoch 5/5
+469/469 [==============================] - 10s 21ms/step - loss: 0.3860 - accuracy: 0.9889

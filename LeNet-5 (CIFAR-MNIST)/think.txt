@@ -1,0 +1,9 @@
+1.No Batchnorm
+2.No Batchnorm_0.125
+3.No Batchnorm_0.25
+4.No Batchnorm_0.5
+5.Batch norm
+6.Batch norm_0.25
+7.Finetuned No Batch Norm 0.25
+8.Finetuned Batch Norm 0.25
+9.Transformer 0.25

@@ -1,0 +1,53 @@
+cifar no q no batch test | W-Dim: 1.5 | A-Dim: 8.95 | MAX_DIM : 13 | Accuracy: 0.6053
+cifar 0.125 q no batch test | W-Dim: 1.5 | A-Dim: 8.9 | MAX_DIM : 13 | Accuracy: 0.5916
+cifar 0.25 q no batch test | W-Dim: 1.5 | A-Dim: 9.0 | MAX_DIM : 13 | Accuracy: 0.5824
+cifar 0.5 q no batch test | W-Dim: 1.625 | A-Dim: 9.0 | MAX_DIM : 13 | Accuracy: 0.423
+
+cifar no q yes batch test | W-Dim: 0.75 | A-Dim: 5.375 | MAX_DIM : 8 | Accuracy: 0.7396
+cifar 0.125 q yes batch test | W-Dim: 0.75 | A-Dim: 5.45 | MAX_DIM : 8 | Accuracy: 0.6722
+cifar 0.25 q yes batch test | W-Dim: 0.75 | A-Dim: 5.383333333333334 | MAX_DIM : 8 | Accuracy: 0.5894
+cifar 0.5 q yes batch test | W-Dim: 0.75 | A-Dim: 6.058333333333334 | MAX_DIM : 8 | Accuracy: 0.1801
+
+
+cifar 0.125 q no batch finetune test | W-Dim: 1.5 | A-Dim: 8.9 | MAX_DIM : 13 | Accuracy: 0.5916
+cifar 0.25 q no batch finetune test | W-Dim: 1.5 | A-Dim: 9.0 | MAX_DIM : 13 | Accuracy: 0.5824
+cifar 0.5 q no batch finetune test | W-Dim: 1.625 | A-Dim: 9.0 | MAX_DIM : 13 | Accuracy: 0.423
+
+
+cifar 0.125 q yes batch finetune test | W-Dim: 0.75 | A-Dim: 5.375 | MAX_DIM : 8 | Accuracy: 0.7183
+cifar 0.25 q yes batch finetune test | W-Dim: 0.75 | A-Dim: 5.55 | MAX_DIM : 8 | Accuracy: 0.6802
+cifar 0.5 q yes batch finetune test | W-Dim: 0.75 | A-Dim: 5.841666666666667 | MAX_DIM : 8 | Accuracy: 0.5384
+
+
+QAT round yes weight yes  | W-Dim: 2.625 | A-Dim: 10.641666666666667 | MAX_DIM : 12 | Accuracy: 0.4125
+QAT round no weight yes | W-Dim: 0.0 | A-Dim: 5.233333333333333 | MAX_DIM : 10 | Accuracy: 0.2029
+QAT round yes weight no | W-Dim: 2.625 | A-Dim: 10.658333333333333 | MAX_DIM : 12 | Accuracy: 0.4101
+QAT round no weight no | W-Dim: 0.0 | A-Dim: 5.425 | MAX_DIM : 10 | Accuracy: 0.1985
+================================================================================================
+----POST-TRAINING-QUANTIZATION
+cifar no q no batch test | W-Dim: 1.5 | A-Dim: 8.95 | MAX_DIM : 13 | Accuracy: 0.6053
+cifar 0.125 q no batch test | W-Dim: 1.5 | A-Dim: 8.9 | MAX_DIM : 13 | Accuracy: 0.5916
+cifar 0.25 q no batch test | W-Dim: 1.5 | A-Dim: 9.0 | MAX_DIM : 13 | Accuracy: 0.5824
+cifar 0.5 q no batch test | W-Dim: 1.625 | A-Dim: 9.0 | MAX_DIM : 13 | Accuracy: 0.423
+
+cifar no q yes batch test | W-Dim: 0.75 | A-Dim: 5.375 | MAX_DIM : 8 | Accuracy: 0.7396
+cifar 0.125 q yes batch test | W-Dim: 0.75 | A-Dim: 5.45 | MAX_DIM : 8 | Accuracy: 0.6722
+cifar 0.25 q yes batch test | W-Dim: 0.75 | A-Dim: 5.383333333333334 | MAX_DIM : 8 | Accuracy: 0.5894
+cifar 0.5 q yes batch test | W-Dim: 0.75 | A-Dim: 6.058333333333334 | MAX_DIM : 8 | Accuracy: 0.1801
+
+----FINETUNE
+cifar 0.125 q no batch finetune test | W-Dim: 1.5 | A-Dim: 8.9 | MAX_DIM : 13 | Accuracy: 0.5916
+cifar 0.25 q no batch finetune test | W-Dim: 1.5 | A-Dim: 9.0 | MAX_DIM : 13 | Accuracy: 0.5824
+cifar 0.5 q no batch finetune test | W-Dim: 1.625 | A-Dim: 9.0 | MAX_DIM : 13 | Accuracy: 0.423
+
+cifar 0.125 q yes batch finetune test | W-Dim: 0.75 | A-Dim: 5.375 | MAX_DIM : 8 | Accuracy: 0.7247
+cifar 0.25 q yes batch finetune test | W-Dim: 0.75 | A-Dim: 5.625 | MAX_DIM : 8 | Accuracy: 0.6783
+cifar 0.5 q yes batch finetune test | W-Dim: 0.75 | A-Dim: 5.975 | MAX_DIM : 8 | Accuracy: 0.5286
+
+----QAT
+QAT round yes weight yes  | W-Dim: 1.125 | A-Dim: 7.133333333333334 | MAX_DIM : 9 | Accuracy: 0.4077
+QAT round yes weight no | W-Dim: 0.0 | A-Dim: 5.225 | MAX_DIM : 10 | Accuracy: 0.2008
+QAT round no weight yes | W-Dim: 1.125 | A-Dim: 7.108333333333333 | MAX_DIM : 9 | Accuracy: 0.4086
+QAT round no weight no | W-Dim: 0.0 | A-Dim: 5.258333333333334 | MAX_DIM : 10 | Accuracy: 0.1958
+
+QAT round yes weight no | W-Dim: 0.0 | A-Dim: 4.375 | MAX_DIM : 6 | Accuracy: 0.4083
