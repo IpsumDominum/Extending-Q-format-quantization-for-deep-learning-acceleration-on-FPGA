@@ -15,16 +15,13 @@ were originally designed to process computer graphic applications and thus can c
 much unneeded overhead when computing deep neuronetworks. Application-specific
 integrated circuit(ASIC) consume much less power than its GPU counterparts but are
 not easy to design, build and test rapidly. Field programmable gate arrays (FPGAs) are
-a more flexible alternative to ASIC allowing for rapid design and testing. FPGAs are
-slightly slower than ASICs but retains its efficiency advantage over GPUs, thus making
+a more flexible alternative to ASIC allowing for rapid design and testing, thus making
 it a popular platform to conduct neuronetwork hardware acceleration experiments.
-In particular, FPGAs is often used to co-design software and hardware methods so
-they work better combined leveraging each other. Quantization is a simple, scalable,
-and accuracy preserving method usually applied in software but may be combined
-efficiently with hardware optimizations. Work by Chun Yan Lo and Chiu-Wing Sham
-showed that a well optimized fixed point quantization scheme is capable of 20x speed
-up in Giga Operations Per second compared with Nvidia RTX 2070 GPU running
-neuronetwork with the keras library.
+Quantization is a simple, scalable, and accuracy preserving method usually applied in
+software but may be combined efficiently with hardware optimizations through the
+FPGA. Work by Chun Yan Lo and Chiu-Wing Sham showed that a well optimized
+fixed point quantization scheme is capable of 20x speed up in GOP compared with
+Nvidia RTX 2070 GPU running neuronetwork with the keras library.
 One difference however between the Lo et al implementation and traditional quanti-
 zation is that they use a special quantization format called Q-format. Instead of using
 full integer quantization Q-format delegates parts of the bits to after the binary point.
@@ -37,5 +34,4 @@ plex model types including an augmented version of the LeNet-5 architecture used
 et al, with added Batch normalization layers, as well as a transformer network trained
 on a subset of the Europarl dataset. The effect of quantization aware training as well as
 post quantization finetuning combined with Q-format quantization is also tested.
-
 
